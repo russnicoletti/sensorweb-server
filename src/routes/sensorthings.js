@@ -56,7 +56,8 @@ if (config.get('sensorthings.server') !==
   //Init DB
   sensorthingsAPI = sensorthings({
     db: config.get('db'),
-    api_version: config.get('version')
+    api_version: config.get('version'),
+    analytics: config.get('analytics')
   });
 }
 
